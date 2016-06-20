@@ -1,0 +1,9 @@
+.bundle/
+.sass-cache/
+Gemfile.lock
+/bin/
+/bower_components/
+/lib/
+/node_modules/
+/public/
+/var/

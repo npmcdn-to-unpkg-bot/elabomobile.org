@@ -1,0 +1,12 @@
+branches:
+  only:
+  - master
+env:
+  global:
+    secure: FQBmAmY93grs7goHfqMAPmL87kFzwZha2QosTXNPKYuHcR2ENe+SA+nIuCfTGGDqNpLNe/1obJDoPvCOgw8+R24Zz7mtVGICvY0a/tVmcw3tiLNYUO3mpHjUD+GrknVFCZOt+rMlphV9IAebhLSTmATCf6puIWSrMLyD3cqOhlJVU2d5yxow40zktmhXCMe7SoGJy64w7YovVHX/nFyHq2WLfym2eO3YFew0Jz6f3P3+cfhGEJqtMoeC8kT/7ipgP58CCM5TZXQX2uYLhXDVnlSFRs1vha6UHKnLFTnTgNYGs4A3+H8iBJBFFFok+0lOalFuP00SFMF9PTdzjsI9hvnZOJJKZMUyiACj30EdAKk+QDhZR3vEPClpjQSWp0KVqA9iAXbs+P1hhYXIlwZwVvVRTsq3+MYuhSlOcsaeAybWGlT1hsq79+i+YvGCsgxCRqx3OBQ1YuQw6pvJaLLuTxDfD1nLtjvIe6XAsr7zqozgxHDEikQDFinZr+VDOxtMbExzGEnOAZdcDtWaRaAkHfdiIPSUOxwBozdIWvQxyTHb2HU9F0txI+1wCl3uV40YySXrwQXgkehstqx0WtlxNo1T45Lm+tMs0UqShUM2ucwSiuygO6Vax0yjyuCkVONUpG5eX4b6vGxCFgK837Z9kmFr6zuHc6fZMAJlSE3thlg=
+install:
+- pip install ghp-import
+language: python
+script:
+- make develop public gh-pages-commit gh-pages-push
+sudo: false

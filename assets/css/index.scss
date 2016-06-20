@@ -1,0 +1,132 @@
+body#index {
+  section {
+    > div {
+      @include make-container();
+      @include make-container-max-widths();
+      > div {
+        @include make-row();
+        border-width: 2px 0 0 0;
+        border-style: solid;
+        border-color: $color-subtitle;
+        h2 {
+          @include make-col(); 
+          @include media-breakpoint-up(xs) { @include make-col-span(8); @include make-col-offset(2);}
+          @include media-breakpoint-up(sm) { @include make-col-span(8); @include make-col-offset(2); }
+          @include media-breakpoint-up(md) { @include make-col-span(6); @include make-col-offset(3); }
+          @include media-breakpoint-up(lg) { @include make-col-span(6); @include make-col-offset(3); }
+          @include media-breakpoint-up(xl) { @include make-col-span(4); @include make-col-offset(4); }
+          margin-bottom: $header-height / 2;
+	  text-align: center;
+	  font-size: 2rem;
+	  line-height: 2rem;
+	  top: -1rem;
+          margin-top: 0;
+	  background-color: #fff;
+          color: $color-subtitle;
+	}
+        article {
+          @include make-col(); 
+	  @include media-breakpoint-up(xs) { @include make-col-span(12); }
+          @include media-breakpoint-up(sm) { @include make-col-span(12); }
+          @include media-breakpoint-up(md) { @include make-col-span(6); }
+          @include media-breakpoint-up(lg) { @include make-col-span(6); }
+          @include media-breakpoint-up(xl) { @include make-col-span(6); } 
+          h3 {
+            color: #000;
+	  }
+	}
+      }
+    }
+  }
+  section#tagline {
+    > div {
+      > div {
+        padding: $header-height $header-height 0 $header-height;
+	border-width: 0px;
+        h1 {
+	  @include media-breakpoint-up(xs) { font-size: 3rem; }
+          @include media-breakpoint-up(sm) { font-size: 4rem; }
+          @include media-breakpoint-up(md) { font-size: 6rem; }
+          @include media-breakpoint-up(lg) { font-size: 8rem; }
+          @include media-breakpoint-up(xl) { font-size: 10rem; }
+          line-height: .8em;
+          color: $color-title;
+	}
+        p {
+	  width: 100%;
+	  margin: 0 auto;
+	  @include media-breakpoint-up(xs) { font-size: 1rem; }
+          @include media-breakpoint-up(sm) { font-size: 1.1rem; }
+          @include media-breakpoint-up(md) { font-size: 1.2rem; }
+          @include media-breakpoint-up(lg) { font-size: 1.3rem; }
+          @include media-breakpoint-up(xl) { font-size: 1.5rem; }
+	  color: $color-subtitle;
+        }
+      }
+    }
+  }
+  section#usage {
+    > div {
+      > div {
+	
+      }
+    }
+  }
+  section#vision {
+    > div {
+      > div {
+        article {
+          blockquote {
+            font-size: 1.5rem;
+            padding: 50px 50px 0 50px;
+            position: relative;
+            font-family: $font-subtitle;
+            font-style: italic;
+          }
+          blockquote:before {
+            display: block;
+            content: "\201C";
+            font-size: 8rem;
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            font-family: $font-subtitle;
+            color: #13bceb;
+          }
+	  &:last-child {
+            @include media-breakpoint-up(xs) { @include make-col-span(12); }
+            @include media-breakpoint-up(sm) { @include make-col-span(12); }
+            @include media-breakpoint-up(md) { @include make-col-span(12); }
+            @include media-breakpoint-up(lg) { @include make-col-span(10); @include make-col-offset(1); }
+            @include media-breakpoint-up(xl) { @include make-col-span(8); @include make-col-offset(2); }  
+	  }
+        }
+      }
+    }
+  }
+  section#contacts {
+    > div {
+      > div {
+        article{
+          &.coordonnees {
+	    @include media-breakpoint-up(xs) { font-size: 1.2rem; }
+            @include media-breakpoint-up(sm) { font-size: 1.2rem; }
+            @include media-breakpoint-up(md) { font-size: 1.4rem; }
+            @include media-breakpoint-up(lg) { font-size: 1.5rem; }
+            @include media-breakpoint-up(xl) { font-size: 1.5rem; } 
+            font-family: $font-subtitle;
+	  }
+        }
+      }
+    }
+  }
+  #map {
+    clear: both;
+    height: 300px;
+    width: 100%;
+    > div {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

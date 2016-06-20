@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block body_id %}index{% endblock %}
+
+{% block content %}
+
+  {# Articles #}
+  <section id="tagline">
+    <div>
+      <div>
+        <h1>l'élabomobile</h1>
+        <p>
+          Coworking nomade de Bayonne St Esprit<br />
+          laboratoire solidaire et éco-responsable<br />
+          propulsion collective.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="usage">
+    <div>
+      <div>
+        <h2>Le projet</h2>
+        <article>
+          <img src="/img/elabomobile-quartier.jpg" />
+          <h3>Un quartier</h3>
+          <p>
+            Bayonne St Esprit, c'est une grande mixité sociale, une vie
+            associative et culturelle riche, des commerces et services de
+            proximité, un pont entre Gascogne et Pays basque, des projets
+            d'urbanisme...
+            L'élabomobile vient participer à cet environnement dense et très vivant.</p>
+        </article>
+        <article>
+          <img src="/img/elabomobile-lieux.jpg" />
+          <h3>Des lieux</h3>
+          <div>
+            <p>
+              Des lieux et leurs habitants accueillent l'élabomobile le temps
+              d'une session de coworking &laquo;&nbsp;<a href="http://wiki.workatjelly.com/w/page/12752597/FrontPage">Jelly</a>&nbsp;&raquo;.
+              <strong>C'est l'occasion de tisser des liens et de contribuer à la vie du
+              lieu et de son écosystème</strong>&nbsp;: personnes, collectifs, quartier,
+              environnement...</p>
+          </div>
+        </article>
+        <article>
+          <img src="/img/elabomobile-coworkers.jpg" />
+          <h3>Des coworkers</h3>
+          <div>
+            <p>
+              L'espace est ouvert à tous, professionnels, habitants ou passants,
+              que ce soit pour travailler seul, en groupe ou simplement être là.
+              Conférences, ateliers et formations
+              invitent à &laquo;&nbsp;faire ensemble&nbsp;&raquo; et
+              à se donner les moyens d'avancer sur nos chemins individuels.</p>
+          </div>
+        </article>
+        <article>
+          <img src="/img/elabomobile-elabomobile.jpg" />
+          <h3>L'élabomobile</h3>
+          <div>
+            <p>Une pincée de communication, un zeste d'organisation, un brin de signalétique, un peu de matériel... mais surtout le plaisir d'accueillir et d'encourager l'émulation collective&nbsp;!</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="vision">
+    <div>
+      <div>
+        <h2>La philosophie</h2>
+        <article>
+          <h3>Nomade</h3>
+          <div>
+            <p>
+              Léger, <strong>libre</strong>, joyeux<br />
+              accueillant, curieux, <strong>ouvert</strong><br />
+              <strong>simple</strong>, sobre, durable<br />
+              éphémère, en mouvement, <strong>vivant !</strong>
+            </p>
+          </div>
+        </article>
+        <article>
+          <h3>Durable</h3>
+          <div>
+            <p>Rechercher, expérimenter et transmettre
+            des solutions pour exercer nos activités
+            sereinement
+            dans le respect de notre environnement
+            et de nos valeurs.
+            Dès aujourd'hui, demain encore.</p>
+          </div>
+        </article>
+        <article>
+          <h3>Propulsion collective</h3>
+          <p>
+            Investir dans le développement collectif,
+            tisser des liens,
+            réaliser ensemble,
+            faire émerger des groupes autour de projets,
+            nourrir l'émulation,
+            faire preuve de solidarité,
+            avec l'énergie du quartier et de ses habitants,
+            faire société.
+          </p>
+        </article>
+        <article>
+          <h3>Changer de perspective</h3>
+          <p>Déplacer le corps, déplacer l'esprit,
+          sortir de la routine,
+          se libérer des entraves, 
+          reconsidérer les problèmes,
+          être curieux,
+          croiser d'autres regards.</p>
+        </article>
+        <article>
+          <blockquote>
+            Un espace de coworking est un outil.
+            Sa valeur ne réside pas dans ses murs,
+            mais dans les interactions locales qu'il facilite&nbsp;:
+            entre ses utilisateurs,
+            avec son environnement proche,
+            en tant que plateforme ouverte sur le monde.
+          </blockquote>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div>
+      <div>
+        <h2>Rencontrons-nous&nbsp;!</h2>
+        <article>
+          <h3>Lancement en cours...</h3>
+          <p>Nous recherchons partenaires et coworkers pour lancer les premières sessions de coworking éphémère&nbsp;!</p>
+          <p>En cours ou à venir&nbsp;:</p>
+          <ol>
+            <li>recherche de parties prenantes : hôtes (lieux et collectifs), moteurs (coworkers) et soutiens&nbsp;;</li>
+            <li>organisation d'une première session prototype&nbsp;;</li>
+            <li>amélioration du concept et de la logistique pour la session suivante...</li>
+          </ol>
+        </article>
+        <article class="coordonnees">
+          <h3>Contacts</h3>
+          <p>
+            Fanny Lescourret &amp; Benoît Bryon<br />
+            contact@elabomobile.com<br />
+            06&nbsp;74&nbsp;49&nbsp;68&nbsp;81
+          </p>
+        </article>
+        <article>
+          <h3>Des questions&nbsp;?</h3>
+          <p>Envie de participer&nbsp;? Envie de mieux comprendre les motivations ou le fonctionnement&nbsp;? Envie d'appliquer ces principes à un autre territoire&nbsp;? Nous serons ravis d'en discuter&nbsp;!
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div id="map">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <div id="map_container"></div>
+  </div>
+{% endblock content %}
