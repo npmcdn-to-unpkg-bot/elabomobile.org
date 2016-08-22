@@ -36,24 +36,25 @@ body#index {
   section#tagline {
     > div {
       > div {
-        padding: $header-height;
+        padding: $header-height $header-height 0 $header-height;
+	border-width: 0;
         h1 {
           @include media-breakpoint-up(xs) { font-size: 2rem; }
           @include media-breakpoint-up(sm) { font-size: 3rem; }
-          @include media-breakpoint-up(md) { font-size: 3rem; }
-          @include media-breakpoint-up(lg) { font-size: 4rem; }
-          @include media-breakpoint-up(xl) { font-size: 6rem; }
+          @include media-breakpoint-up(md) { font-size: 4rem; }
+          @include media-breakpoint-up(lg) { font-size: 5rem; }
+          @include media-breakpoint-up(xl) { font-size: 7rem; }
           line-height: .8em;
           color: $color-title;
         }
         p {
           width: 100%;
           margin: 0 auto;
-          @include media-breakpoint-up(xs) { font-size: .9rem; }
-          @include media-breakpoint-up(sm) { font-size: .9rem; }
-          @include media-breakpoint-up(md) { font-size: .9rem; }
-          @include media-breakpoint-up(lg) { font-size: .9rem; }
-          @include media-breakpoint-up(xl) { font-size: .9rem; }
+          @include media-breakpoint-up(xs) { font-size: 1.0rem; }
+          @include media-breakpoint-up(sm) { font-size: 1.1rem; }
+          @include media-breakpoint-up(md) { font-size: 1.2rem; }
+          @include media-breakpoint-up(lg) { font-size: 1.3rem; }
+          @include media-breakpoint-up(xl) { font-size: 1.4rem; }
           color: $color-subtitle;
         }
       }
@@ -137,32 +138,6 @@ body#index {
     > div {
       > div {
         border-width: 0;
-        article {
-          blockquote {
-            font-size: 1.5rem;
-            padding: 50px 50px 0 50px;
-            position: relative;
-            font-family: $font-subtitle;
-            font-style: italic;
-          }
-          blockquote:before {
-            display: block;
-            content: "\201C";
-            font-size: 8rem;
-            position: absolute;
-            left: -30px;
-            top: 5px;
-            font-family: $font-subtitle;
-            color: #13bceb;
-          }
-          &:last-child {
-            @include media-breakpoint-up(xs) { @include make-col(12); }
-            @include media-breakpoint-up(sm) { @include make-col(12); }
-            @include media-breakpoint-up(md) { @include make-col(12); }
-            @include media-breakpoint-up(lg) { @include make-col(10); @include make-col-offset(1); }
-            @include media-breakpoint-up(xl) { @include make-col(8); @include make-col-offset(2); }  
-          }
-        }
       }
     }
   }
